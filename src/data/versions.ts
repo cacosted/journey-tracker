@@ -20,8 +20,8 @@ const VERSION_IDS: Partial<Record<GameSlug, string[]>> = {
 };
 
 function logoUrl(id: string): string {
-  if (id === "black-2") return "/games/black-2-white-2.jpg";
-  if (id === "white-2") return "/games/white-2.jpg";
+  if (id === "black-2") return `${import.meta.env.BASE_URL}games/black-2-white-2.jpg`;
+  if (id === "white-2") return `${import.meta.env.BASE_URL}games/white-2.jpg`;
   return `https://img.pokemondb.net/boxes/${id}.jpg`;
 }
 
@@ -49,7 +49,7 @@ export const VARIANT_BOSSES: Partial<Record<GameSlug, Boss[]>> = {
       order: 64,
       levelCap: 67,
       trainerSprite: "sada",
-      image: "/trainers/leaders/sada-ai.png",
+      image: `${import.meta.env.BASE_URL}trainers/leaders/sada-ai.png`,
       spriteCredit: "Brumirage / Pokémon Showdown",
       team: paradoxTeam(["slither-wing", "scream-tail", "brute-bonnet", "flutter-mane", "sandy-shocks"], "roaring-moon", "protosynthesis"),
       versions: ["scarlet"],
@@ -62,7 +62,7 @@ export const VARIANT_BOSSES: Partial<Record<GameSlug, Boss[]>> = {
       order: 64,
       levelCap: 67,
       trainerSprite: "turo",
-      image: "/trainers/leaders/turo-ai.png",
+      image: `${import.meta.env.BASE_URL}trainers/leaders/turo-ai.png`,
       spriteCredit: "Brumirage / Pokémon Showdown",
       team: paradoxTeam(["iron-moth", "iron-bundle", "iron-hands", "iron-jugulis", "iron-thorns"], "iron-valiant", "quark-drive"),
       versions: ["violet"],

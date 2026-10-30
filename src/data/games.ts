@@ -44,7 +44,7 @@ const LOGO_URLS: Record<GameSlug, string> = {
   platinum: "https://img.pokemondb.net/boxes/platinum.jpg",
   "heart-gold-soul-silver": "https://img.pokemondb.net/boxes/heartgold.jpg",
   "black-white": "https://img.pokemondb.net/boxes/black.jpg",
-  "black-2-white-2": "/games/black-2-white-2.jpg",
+  "black-2-white-2": `${import.meta.env.BASE_URL}games/black-2-white-2.jpg`,
   "x-y": "https://img.pokemondb.net/boxes/x.jpg",
   "omega-ruby-alpha-sapphire": "https://img.pokemondb.net/boxes/omega-ruby.jpg",
   "sun-moon": "https://img.pokemondb.net/boxes/sun.jpg",

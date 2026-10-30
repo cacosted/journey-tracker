@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
+    "build:pages": "tsc -b && vite build --mode github && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "lint": "tsc -b --noEmit"
   },
